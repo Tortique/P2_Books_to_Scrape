@@ -7,15 +7,15 @@ It will scrap informations for each book in .csv files and each images, all sort
 
 Use the package installer pip to install all requirements
 
-'''
+```bash
 pip install -r requirements.txt
-'''
+```
 
 ## Usage
 
 Be sure to have 'data' folder
 and launch the project
 
-'''
+```python
 python3 main.py
-'''
+```
