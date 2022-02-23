@@ -1,7 +1,7 @@
 # P2_Books_to_Scrape
 
 This project is a python script for scrap a site : https://books.toscrape.com/
-It will scrap informations for each book in .csv files and each images, all sort by categories.
+</br> It will scrap informations for each book in .csv files and each images, all sort by categories.
 
 ## Installation
 
