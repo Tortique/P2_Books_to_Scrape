@@ -34,6 +34,9 @@ def category_scrap(url):
               'image_url']
     name = soup.find("h1").string
 
+    if not os.path.isdir('data'):
+        os.mkdir('data')
+
     if not os.path.isdir('data/' + name):
         os.mkdir('data/' + name)
         os.mkdir('data/' + name + '/images')
@@ -57,7 +60,7 @@ def category_scrap(url):
             info = page_scrap(url)
             writer.writerow(info)
             image = requests.get(info[-1])
-            with open("data/" + name + "/images/" + info[2].replace(':', ' ') + ".jpg", 'wb') as f:
+            with open("data/" + name + "/images/" + info[2].replace(':', '').replace('/','').replace('\\' , '' ).replace('"', '').replace('.', '').replace('*', '').replace('?','') + ".jpg", 'wb') as f:
                 f.write(image.content)
 
 
