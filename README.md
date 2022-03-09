@@ -13,8 +13,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Be sure to have 'data' folder
-and launch the project
+launch the project with :
 
 ```python
 python3 main.py
